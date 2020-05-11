@@ -1,2 +1,2 @@
-# ChurchOnlineAttendanceDialog
-Attendance dialog for the ChurchOnline platform to record number of watchers
+# Church Online Attendance Dialog
+Attendance dialog for the Church Online Platform (https://churchonlineplatform.com/)
