@@ -8,7 +8,7 @@ Add a popup dialog to capture attendance when users go to your Church Online ins
 At the time of this writing, the Church Online Platform does not provide a way of capturing the number of people who may be watching on a single session. This project allows you to fill that gap by creating a popup dialog which prompts the user for the number of people watching, and then sends that data to Google Analytics. The data can then be rolled up in a Google Data Studio report, or directly in Google Analytics.
 
 ## Before you begin
-Before you add the dialog to your theme, be sure that Google Analytics is correctly setup for your Church Online Platform instance. The Church Online Platform has a Google Tracking Code se
+Before you add the dialog to your theme, be sure that Google Analytics is correctly setup for your Church Online Platform instance. The Church Online Platform has a Google Tracking Code section in the Settings where you can paste your tracking code. The code in this project requires that the tracking code be setup before the functions in [Step 3](## Step 3 - Modifying your theme's Javascript) are called.
 
 ## Step 1 - Modifying your theme's Stylesheet
 You will first need to add the attendance dialog's CSS ([dialog.css](/dialog.css)) to your theme's Stlyesheet tab. Don't replace the existing CSS shown in the tab, but rather add the dialog's css to it (adding to the top is easiest). Be sure to save.
