@@ -19,14 +19,24 @@ The next step is adding the dialog HTML ([dialog.html](/dialog.html)) to your th
 If you don't already have Jquery and FontAwesome added to the `<head>` section in your Template, then it will need to be added now. You can copy and paste the two links from [template-head.html](/template-head.html). Be sure to save.
 
 ## Step 3 - Modifying your theme's Javascript
+### Adding the code
 Now its time to modify your theme's Javascript. Copy and paste the code from [dialog.js](/dialog.js) after existing code in your theme's Javascript tab. 
 
-The checkShowDialog function will cause the dialog to be shown in the following instances:
+In order to show the dialog when an event becomes live and capture attendance of users who may be waiting before an event starts, then you will need to add a call to the `checkShowDialog()` function into the existing`app.on('event:live', function(){` trigger like this:
+`app.on('event:live', function(){
+  $('.co-chat-tab').trigger('click');
+  checkShowDialog();//<-- call added here
+});`
+
+### Code description
+The `checkShowDialog` function will cause the dialog to be shown in the following instances:
 1. When the user first comes to the site
 2. When the user has returned to the site after the elapsed time specified in the `milliseconds` variable
 3. When the user returnes to the site, but never answered the dialog
 
-The 
+If you wish to change the amount of time before the dialog is shown.
+
+The `sendCloseDialog` function is called when a dialog number button is clicked and is responsible for sending the proper event to Google Analytics.
 
 
 
