@@ -23,9 +23,10 @@ If you don't already have Jquery and FontAwesome added to the `<head>` section i
 Now its time to modify your theme's Javascript. Copy and paste the code from [dialog.js](/dialog.js) after existing code in your theme's Javascript tab. 
 
 In order to show the dialog when an event becomes live and capture attendance of users who may be waiting before an event starts, then you will need to add a call to the `checkShowDialog()` function into the existing`app.on('event:live', function(){` trigger like this:
-`app.on('event:live', function(){<br/>
-  $('.co-chat-tab').trigger('click');\
-  checkShowDialog();//<-- call added here\
+`app.on('event:live', function(){
+    
+  $('.co-chat-tab').trigger('click');
+  checkShowDialog();//<-- call added here
 });`
 
 ### Code description
