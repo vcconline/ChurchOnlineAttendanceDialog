@@ -34,8 +34,8 @@ The `checkShowDialog` function will cause the dialog to be shown in the followin
 2. When the user has returned to the site after the elapsed time specified in the `milliseconds` variable
 3. When the user returnes to the site, but never answered the dialog
 
-If you wish to change the amount of time before the dialog is shown.
+If you wish to change the amount of time before the dialog is shown simply change the value of the `milliseconds` variable to the number of milliseconds before the dialog is shown again.
 
-The `sendCloseDialog` function is called when a dialog number button is clicked and is responsible for sending the proper event to Google Analytics.
+The `sendCloseDialog` function is called when a dialog number button is clicked and is responsible for sending the proper event to Google Analytics. You can modify this function to send different events/values to Google Analytics or your prefered destination.
 
 ## Step 4 - Reporting
