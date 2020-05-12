@@ -16,7 +16,7 @@ You will first need to add the attendance dialog's CSS ([dialog.css](/dialog.css
 ## Step 2 - Modifying your theme's Template
 The next step is adding the dialog HTML ([dialog.html](/dialog.html)) to your theme's Template tab. Copy and paste the dialog code right before the `<footer` element. You can also customize this code to change the attendance prompt, the button numbers, or what values are sent to the javascript function. The CSS for the dialog makes sure that the dialog is hidden until the proper Javascript is added.
 
-If you don't already have Jquery added to the `<head>` section in your Template then it will need to be added now. You can copy and paste the example in ([jquery-head](/jquery-head.js).
+If you don't already have Jquery and FontAwesome added to the `<head>` section in your Template, then it will need to be added now. You can copy and paste the two links from [template-head.html](/template-head.html).
 
 ## Step 3 - Modifying your theme's Javascript
 This step has two parts, the
