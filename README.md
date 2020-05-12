@@ -24,7 +24,6 @@ Now its time to modify your theme's Javascript. Copy and paste the code from [di
 
 In order to show the dialog when an event becomes live and capture attendance of users who may be waiting before an event starts, then you will need to add a call to the `checkShowDialog()` function into the existing`app.on('event:live', function(){` trigger like this:
 `app.on('event:live', function(){
-    
   $('.co-chat-tab').trigger('click');
   checkShowDialog();//<-- call added here
 });`
@@ -38,7 +37,5 @@ The `checkShowDialog` function will cause the dialog to be shown in the followin
 If you wish to change the amount of time before the dialog is shown.
 
 The `sendCloseDialog` function is called when a dialog number button is clicked and is responsible for sending the proper event to Google Analytics.
-
-
 
 ## Step 4 - Reporting
