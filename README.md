@@ -41,7 +41,14 @@ The `sendCloseDialog` function is called when a dialog number button is clicked 
 ## Step 4 - Reporting
 There are a couple of ways to report on the collected attendance data. One option, which we implemented and will briefly cover in this example, is to create a free Google Data Studio report which connects to our Google Analytics account used on the Church Online Platform.
 
-In our example, we created a Google Data Studio report which summarizes the dialog submissions as well as the attendance data:
+In our example, we created a Google Data Studio report which summarizes the dialog submissions as well as the attendance data. Here is one table with example data from the report:
 ![dialog-submissions-data-studio.png](dialog-submissions-data-studio.png)
+
+In the example above, the attenance data is summarized using a table with the following parameters:
+-Dimension: Event Action
+-Metric 1: Total Events - Renamed to Submissions in our table
+-Metric 2: Event Value - Renamed to # Watching in our table
+
+There are a number of great resources available online which cover, in detail, how to create a Google Data Studio report. Although creating a full report is out of scope for this project, please let us know if you have any questions and we would be happy to help.
 
 
