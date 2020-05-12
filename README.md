@@ -46,9 +46,9 @@ In our example, we created a Google Data Studio report which summarizes the dial
 ![dialog-submissions-data-studio.png](dialog-submissions-data-studio.png)
 
 In the example above, the attenance data is summarized using a table with the following parameters:
--Dimension: Event Action
--Metric 1: Total Events - Renamed to Submissions in our table
--Metric 2: Event Value - Renamed to # Watching in our table
+..*Dimension: Event Action
+..*Metric 1: Total Events - Renamed to Submissions in our table
+..*Metric 2: Event Value - Renamed to # Watching in our table
 
 There are a number of great resources available online which cover, in detail, how to create a Google Data Studio report. Although creating a full report is out of scope for this project, please let us know if you have any questions and we would be happy to help.
 
