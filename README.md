@@ -8,7 +8,7 @@ Add a popup dialog to capture attendance when users go to your Church Online ins
 At the time of this writing, the Church Online Platform does not provide a way of capturing the number of people who may be watching on a single session. This project allows you to fill that gap by creating a popup dialog which prompts the user for the number of people watching, and then sends that data to Google Analytics. The data can then be rolled up in a Google Data Studio report, or directly in Google Analytics.
 
 ## Before you begin
-Before you add the dialog to your theme, be sure that Google Analytics is correctly setup for your Church Online Platform instance. The Church Online Platform has a Google Tracking Code section in the Settings where you can paste your tracking code. The code in this project requires that the tracking code be setup before the functions in [Step 3](## Step 3 - Modifying your theme's Javascript) are called.
+Before you add the dialog to your theme, be sure that Google Analytics is correctly setup for your Church Online Platform instance. The Church Online Platform has a Google Tracking Code section in the Settings where you can paste your tracking code. The code in this project requires that the tracking code be setup before the functions in **Step 3**  are called. To get this to work, we had to put a portion of our tracking code in the theme's Javascript section, and then the code which records the pageview in the Google tracking code section.
 
 ## Step 1 - Modifying your theme's Stylesheet
 You will first need to add the attendance dialog's CSS ([dialog.css](/dialog.css)) to your theme's Stlyesheet tab. Don't replace the existing CSS shown in the tab, but rather add the dialog's css to it (adding to the top is easiest). Be sure to save.
@@ -20,7 +20,7 @@ If you don't already have Jquery and FontAwesome added to the `<head>` section i
 
 ## Step 3 - Modifying your theme's Javascript
 ### Adding the code
-Now its time to modify your theme's Javascript. Copy and paste the code from [dialog.js](/dialog.js) after existing code in your theme's Javascript tab. 
+Now its time to modify your theme's Javascript. Copy and paste the code from [dialog.js](/dialog.js) after existing code in your theme's Javascript tab. The code requires that the Google Analytics tracking code be setup before being called, and that a GA tracker called `ga` is created. Be sure the code is added after the `ga('create', 'YOUR-GA-TRACKING-CODE', 'auto');` in your theme.
 
 In order to show the dialog when an event becomes live and capture attendance of users who may be waiting before an event starts, then you will need to add a call to the `checkShowDialog()` function into the existing`app.on('event:live', function(){` trigger like this:
 `app.on('event:live', function(){
